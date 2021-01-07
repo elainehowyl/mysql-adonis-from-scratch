@@ -1,0 +1,17 @@
+@layout('base')
+
+@section('content')
+<h1>List of Owners</h1>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr>
+  @each(o in owners)
+   <tr>
+     <td>{{o.first_name}}</td>
+     <td>{{o.last_name}}</td>
+   </tr>
+  @endeach
+</table>
+@endsection
